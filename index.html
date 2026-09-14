@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OPERAÇÃO JULIANA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Serif:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+    <body>
+        <div class="app">
+            <div class="card">
+                <section id="screen1" class="screen active">
+                    <div class="classification">
+
+                        <p>
+                            ARQUIVO 001 //
+                            ACESSO RESTRITO
+                        </p>
+
+                    </div>
+
+
+                    <h1>
+                        OPERAÇÃO ACHANDO O PRESENTE
+                    </h1>
+
+
+                    <p>
+
+                        Se você chegou até aqui,
+                        significa que recebeu uma
+                        mensagem que não deveria
+                        ter chegado no prazo.
+
+                    </p>
+
+
+                    <p>
+
+                        O presente está atrasado.
+
+                        <br>
+
+                        Mas não está perdido.
+
+                    </p>
+
+
+                    <p>
+
+                        Ele está vindo de muito longe.
+
+                    </p>
+
+
+                    <div class="secret">
+
+                        <p>STATUS DA CARGA</p>
+
+                        <br><br>
+
+                        <span class="small">
+
+                            <p>EM TRÂNSITO</p>
+
+                        </span>
+
+                    </div>
+
+
+                    <button onclick="next(2)">
+
+                        <p>INICIAR INVESTIGAÇÃO</p>
+
+                    </button>
+
+                </section>
+                <section id="screen2" class="screen">
+
+                    <div class="classification">
+
+                        <p>PISTA 01 // ORIGEM</p>
+
+                    </div>
+
+
+                    <h1>
+
+                        Encontre o ponto de partida.
+
+                    </h1>
+
+
+                    <p>
+
+                        O objeto começou sua viagem
+                        em algum lugar do planeta.
+
+                    </p>
+
+
+                    <p>
+
+                        Estas são as únicas informações
+                        que temos:
+
+                    </p>
+
+
+                    <div class="coordinates">
+
+                        <p>35° 41′ N</p>
+
+                        <br>
+
+                        <p>139° 41′ E</p>
+
+                    </div>
+
+
+                    <p>
+
+                        Descubra onde essas coordenadas
+                        levam.
+
+                    </p>
+
+
+                    <input id="answer1" placeholder="Digite o local encontrado">
+
+
+                    <button onclick="checkLocation()">
+
+                        CONFIRMAR LOCALIZAÇÃO
+
+                    </button>
+
+
+                    <div id="status1" class="status">
+
+                    </div>
+
+
+                </section>
+
+                <section id="screen3" class="screen">
+
+                    <div class="classification">
+
+                        <p>LOCALIZAÇÃO CONFIRMADA</p>
+
+                    </div>
+
+
+                    <h1>
+
+                        東京
+
+                    </h1>
+
+
+                    <p>
+
+                        Você encontrou a origem.
+
+                    </p>
+
+
+                    <p>
+
+                        Mas uma cidade não é suficiente.
+
+                    </p>
+
+
+                    <p>
+
+                        Agora precisamos descobrir
+                        qual país está por trás dela.
+
+                    </p>
+
+
+                    <div class="secret">
+
+                        <p class="sol">*</p>
+
+                        <br>
+
+                        <p>Onde o sol nasce primeiro?</p>
+
+                        <br><br>
+
+                        <p>/^^\</p>
+
+                        <br>
+
+                        <p>
+                            Onde uma montanha pode ser
+                            um símbolo nacional?
+                        </p>
+
+                        <br><br>
+
+                        <p>
+                            日
+                            本
+                            和
+                            夢
+                            心
+                            侍
+                            武
+                            桜
+                        </p>
+
+                        <br>
+
+                        <p>
+                            Onde uma escrita parece um
+                            código para quem não a conhece?
+                        </p>
+
+                    </div>
+
+
+                    <button onclick="next(4)">
+
+                        <p>CONTINUAR</p>
+
+                    </button>
+
+
+                </section>
+
+                <section id="screen4" class="screen">
+
+                    <div class="classification">
+
+                        <h1>PISTA 02 // CARGA</h1>
+
+                    </div>
+
+
+                    <h1>
+
+                        Agora sabemos de onde veio.
+
+                    </h1>
+
+
+                    <p>
+
+                        Mas ainda não sabemos
+                        o que está sendo transportado.
+
+                    </p>
+
+
+                    <p>
+
+                        Existe apenas uma informação
+                        sobre a carga:
+
+                    </p>
+
+
+                    <div class="coordinates">
+
+                        <p>1.000</p>
+
+                    </div>
+
+
+                    <p>
+
+                        Não são 1.000 gramas.
+
+                        <br>
+
+                        Não são 1.000 reais.
+
+                        <br>
+
+                        Não são 1.000 quilômetros.
+
+                    </p>
+
+
+                    <p>
+
+                        São exatamente <strong>1.000</strong>
+                        partes de alguma coisa.
+
+                    </p>
+
+
+                    <button onclick="next(5)">
+
+                        <p>DESCOBRIR A CARGA</p>
+
+                    </button>
+
+
+                </section>
+
+
+                <section id="screen5" class="screen">
+
+                    <div class="classification">
+
+                        <h1>PISTA 03 // CLASSIFICAÇÃO</h1>
+
+                    </div>
+
+
+                    <h1>
+
+                        Última pista.
+
+                    </h1>
+
+
+                    <p>
+
+                        A carga é:
+
+                    </p>
+
+
+                    <div class="secret">
+
+                        <p>BRANCA</p>
+
+                        <br><br>
+
+                        <p>JAPONESA</p>
+
+                        <br><br>
+
+                        <p>1.000 PARTES</p>
+
+                    </div>
+
+
+                    <p>
+
+                        E existe uma última informação
+                        sobre ela.
+
+                    </p>
+
+
+                    <p>
+
+                        Seu nome contém um lugar onde
+                        ninguém gostaria de passar as
+                        férias.
+
+                    </p>
+
+
+                    <input id="answer2" placeholder="Qual é o nome da carga?">
+
+
+                    <button onclick="checkFinal()">
+
+                        <P>ENVIAR RESPOSTA</P>
+
+                    </button>
+
+
+                    <div id="status2" class="status">
+
+                    </div>
+
+
+                </section>
+
+
+
+                <section id="screen6" class="screen reveal">
+
+                    <div class="classification">
+
+                        <P>ARQUIVO DESCLASSIFICADO</P>
+
+                    </div>
+
+
+                    <h1>
+
+                        MISSÃO CONCLUÍDA
+
+                    </h1>
+
+
+                    <div class="hell">
+
+                        <p>
+                            <h1>WHITE</h1><br>
+                        </p>
+
+                        <H1>HELL</H1>
+
+                    </div>
+
+
+                    <p class="final">
+
+                        Você descobriu.
+
+                    </p>
+
+
+                    <p>
+
+                        Seu presente é um dos
+                        quebra-cabeças mais difíceis
+                        que poderia ter recebido.
+
+                    </p>
+
+
+                    <div class="secret">
+
+                        <p>1.000 PEÇAS</p>
+
+                        <br><br>
+
+                        <p>ORIGEM: JAPÃO ------- 和 夢 心 侍 武 桜</p>
+                        <br><br>
+
+                        <p>DESTINO: BRASIL -------- [BR]</p>
+
+                        <br><br>
+
+                        <p>
+                            STATUS:
+                            EM TRÂNSITO
+                        </p>
+
+                    </div>
+
+
+                    <p>
+
+                        Ele ainda não chegou.
+
+                    </p>
+
+
+                    <p>
+
+                        Mas está a caminho.
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+
+                            Boa sorte.
+
+                        </strong>
+
+                        <br>
+
+                        Você vai precisar.
+
+                        <p>}:)</p>
+
+                    </p>
+
+
+                </section>
+
+
+            </div>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+    </body>
+
+</html>

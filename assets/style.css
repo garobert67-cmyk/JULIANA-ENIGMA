@@ -1,0 +1,421 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:black;
+  color: #F4F0E7;
+  font-family:monospace,sans-serif;
+  min-height: 100vh;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.app {
+
+  width: 100%;
+
+  max-width: 720px;
+
+  margin: auto;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 25px;
+
+}
+
+
+
+.card {
+
+  width: 100%;
+
+  background: transparent;
+
+  color: #1eff00;
+
+  padding: 38px 28px;
+
+  border: 1px solid #37ff00;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.45);
+
+  position: relative;
+
+}
+
+
+/* linha decorativa */
+
+.card::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+
+  left: 10px;
+
+  right: 10px;
+
+  bottom: 10px;
+
+  border: 1px solid
+   #1eff00;
+
+  pointer-events: none;
+
+}
+
+
+
+
+.classification {
+
+  font-family: monospace; 
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #1eff00;
+
+  text-transform: uppercase;
+
+  margin-bottom: 25px;
+
+}
+
+
+h1 {
+
+  font-family:monospace;
+
+  font-size: 32px;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  margin: 0 0 15px;
+
+}
+
+
+h2 {
+
+  font-family:monospace;
+
+  font-weight: 500;
+
+  font-size: 25px;
+
+}
+
+
+p {
+
+  line-height: 1.7;
+
+  font-size: 15px;
+
+}
+
+
+.small {
+
+  font-family:monospace;
+
+  font-size: 12px;
+
+  color: #1eff00;
+
+}
+
+
+/* =========================
+   COORDENADAS
+========================= */
+
+.coordinates {
+
+  margin: 30px 0;
+
+  padding: 22px;
+
+  border-left:
+    4px solid #1eff00;
+  border-right:
+    4px solid #1eff00;
+
+  background: transparent;
+
+  font-family:monospace;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+
+  width: 100%;
+
+  border: 1px dashed #1eff00;
+
+  padding: 16px;
+
+  background: transparent;
+
+  color: #1eff00;
+
+  font-family:monospace;
+
+  letter-spacing: 1px;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+  margin-top: 15px;
+
+}
+
+
+button:hover {
+
+  background: #1eff00;
+    color: black;
+  transform:
+    translateY(-1px);
+
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input {
+
+  width: 100%;
+
+  padding: 15px;
+
+  border:
+
+    1px dashed #1eff00;
+
+  background: transparent;
+
+  font-family:monospace;
+
+  font-size: 15px;
+
+  margin-top: 10px;
+  text-align: center;
+  appearance:none;
+  
+
+}
+
+
+input:focus {
+  outline: none;
+  color:#1eff00;
+  border-color:#1eff00;
+}
+
+input::placeholder {
+  opacity: .4;
+  color:#1eff00 ; 
+}
+
+
+/* =========================
+   TELAS
+========================= */
+
+.screen {
+  display: none;
+  animation:fade .4s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+
+@keyframes fade {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(10px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+
+  margin-top: 15px;
+
+  font-family:
+    "Roboto Mono",
+    monospace;
+
+  font-size: 12px;
+
+  text-align: center;
+
+}
+
+
+.error {
+
+  color:
+    #1eff00;
+
+}
+
+
+.success {
+
+  color:
+    #35613b;
+
+}
+
+
+/* =========================
+   SEGREDO
+========================= */
+
+.secret {
+
+  margin: 25px 0;
+
+  padding: 5px;
+
+  border:
+    1px dashed #1eff00;
+
+  text-align: center;
+
+  font-family:
+    "Roboto Mono",
+    monospace;
+
+}
+
+
+/* =========================
+   REVELAÇÃO
+========================= */
+
+.reveal {
+
+  text-align: center;
+
+}
+
+
+.hell {
+
+  font-family:monospace;
+
+  font-size: 42px;
+
+  color:
+    #1eff00;
+
+  margin:
+    25px 0;
+
+}
+
+
+.final {
+
+  font-size: 19px;
+font-family: monospace;
+  line-height: 1.8;
+
+}
+
+
+.sol{
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: -60px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:500px){
+
+  .app {
+
+    padding: 12px;
+
+  }
+
+  .card {
+
+    padding:
+      32px 20px;
+
+  }
+
+  h1 {
+
+    font-size:
+      27px;
+
+  }
+
+}
+
